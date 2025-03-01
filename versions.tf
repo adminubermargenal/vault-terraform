@@ -9,7 +9,6 @@ terraform {
   }
 }
 
-
 provider "aws" {
-  region = "eu-central-1"
+  region = "eu-central-1"  # Должен совпадать с регионом в AWS CLI
 }
