@@ -2,13 +2,11 @@ name: Deploy Vault Infrastructure
 
 on:
   push:
-    branches: [ "main" ]  # Фикс: добавлены кавычки и пробел
+    branches: [main]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write  # Добавьте это для Terraform apply
 
     steps:
       - name: Checkout code
